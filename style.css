@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --light-orange: #f92929;
+  --pale-orange: #b62828;
+  --yellow: #f2c94c;
+  --green: #0bdc7b;
+}
+
+.child-flex {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.social-icon {
+  width: 32px;
+}
+
+.border-line {
+  background-color: var(--pale-orange);
+  height: 1px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  background-color: var(--black);
+  color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header > .logo {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header > .logo > .menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: large;
+}
+.close-menu-icon {
+  display: none;
+  cursor: pointer;
+  background: #000;
+  width: 32px;
+  aspect-ratio: 1/1;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+:is(.menu-icon,.close-menu-icon):active {
+  transform: scale(0.9);
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  color: #fff;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 0;
+}
+header > nav:first-of-type > ul {
+  gap: 1rem;
+}
+
+main {
+  width: 100%;
+  height: 500px;
+  background: url("https://content.jdmagicbox.com/comp/barnala/z6/9999p1679.1679.190911024953.c4z6/catalogue/crispy-pizza-cafe-tapa-barnala-pizza-outlets-46mxfj9w42.jpg")
+    no-repeat top center;
+  background-size: cover;
+}
+
+main > div {
+  padding: 2rem;
+  color: var(--white);
+}
+main > div > h1 {
+  font-size: 2.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main > div > div:empty {
+  height: 0.3rem;
+  background-color: var(--green);
+  margin: 2rem 0;
+  max-width: 200px;
+}
+main > div > p {
+  max-width: 200px;
+  font-size: small;
+}
+
+.sections {
+  background-color: var(--black);
+  height: 100%;
+  color: var(--white);
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sections > section {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sections > section > h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: serif;
+  text-transform: uppercase;
+}
+.sections > section > .border-line {
+  height: 3px;
+  width: 12.5rem;
+  margin: 0.3rem 0 1.7rem;
+}
+.sections > section p {
+  font-size: 14px;
+}
+
+.sections > .about > div:last-child {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.sections > .about > div:last-child > div > .border-line {
+  height: 2px;
+  width: 80%;
+  margin: 0.3rem 0;
+}
+.sections > .about img {
+  max-width: 250px;
+  border-radius: 0.3rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 3rem 0;
+}
+.menu > .menu-item {
+  display: flex;
+  gap: 2rem 0.7rem;
+}
+.menu > .menu-item img {
+  height: 80px;
+  aspect-ratio: 1/1;
+  border-radius: 0.3rem;
+}
+
+.menu > .menu-item > div > h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+  color: var(--yellow);
+  font-weight: 300;
+}
+.menu > .menu-item > div > p {
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.carousel {
+  width: 100%;
+}
+.carousel-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+.carousel-item img {
+  width: 100%;
+  height: 400px; /* set any height you want */
+  object-fit: cover; /* optional: crop image nicely */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: fit-content;
+  height: fit-content;
+  top: 50%;
+}
+/* .carousel-control-prev {
+    left: -1rem;
+  } */
+.carousel-control-prev {
+  right: -1rem;
+}
+
+.gallary {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 100px 120px;
+  gap: 0.3rem;
+  /* margin: 3rem 0; */
+}
+
+.gallary > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gallary > img:first-child {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
+}
+.gallary > img:nth-child(3) {
+  grid-row: 1 / span 2;
+  grid-column: 5/6;
+}
+
+.contact > div {
+  display: flex;
+  gap: 1.5rem;
+}
+.contact > div > .contact-info > div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.contact > div > .contact-info > div > span {
+  font-size: 11px;
+}
+.contact > div > .contact-info > div > .location-icon {
+  height: 28px;
+  aspect-ratio: 1/1;
+  padding: 2px;
+}
+.contact > div > .contact-info > div > .phone-icon {
+  height: 26px;
+  aspect-ratio: 1/1;
+  padding: 3px;
+}
+
+footer {
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem 2rem;
+  color: var(--white);
+  align-items: center;
+}
+
+footer > img {
+  height: 52px;
+}
+footer > div > div {
+  font-size: small;
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+footer > div > div img {
+  height: 18px;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width:838px) {
+  header > .logo{
+    font-size: 16px;
+  }
+  header > nav > ul {
+    font-size: 13px;
+    gap:0;
+  }
+}
+@media screen and (max-width:774px){
+  header > .logo > .menu-icon {
+  display: inline-block;
+}
+
+  header > nav:first-of-type {
+    position: absolute;
+    top:0;
+    left: -100%;
+    background: var(--light-orange);
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+  }
+  .close-menu-icon{
+    display: block;
+  }
+
+  header > nav:first-of-type > ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width:521px){
+  main {
+    height: auto;
+  }
+  .sections {
+    padding: 2rem 0;
+  }
+  .sections :is(.about, #menu, .contact) {
+    padding: 0 4rem;
+  }
+  .gallary {
+    padding: 0 2rem;
+  }
+  /* about */
+  .sections > .about > div:last-child {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sections > .about img {
+    max-width: 100%;
+  }
+  .sections > .about > div:last-child > div> .border-line {
+    display: none;;
+  }
+
+  /* menu */
+  .menu {
+    grid-template-columns: 1fr;
+  }
+  /* contact */
+  .contact > div {
+    flex-direction: column;
+  }
+}

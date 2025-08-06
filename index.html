@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./public/pizza.png" />
+    <meta
+      name="description"
+      content="Indian Pizza Restaurant, having circle in shape and different radius of pizza"
+    />
+    <title>Pizza Restaurant</title>
+  </head>
+  <body>
+    <!-- Header Section includes, restaurant name, navigation and social icon -->
+    <header>
+      <div class="logo">
+        <span aria-label="Menu Icon" class="menu-icon" onclick="openMenu()">☰</span>
+        <a href="/" aria-label="App Logo">Pizza Restaurant</a>
+      </div>
+      <nav aria-label="Main Navigation" id="main-navigation">
+        <span role="button" onclick="closeMenu()" aria-label="Close Menu Icon" class="close-menu-icon">✕</span>
+        <ul>
+          <li><a href="#about">about us</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="/blogs.html">blogs</a></li>
+          <li><a href="/testimony.html">testimony</a></li>
+          <li><a href="#find">find us</a></li>
+          <li><a href="/our-team.html">our team</a></li>
+        </ul>
+      </nav>
+      <!-- Social Icon -->
+      <nav aria-label="Social Media">
+        <ul>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              aria-label="Follow us on Instagram"
+            >
+              <img
+                src="./public/instagram.png"
+                alt="Follow us on Instagram"
+                class="social-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              aria-label="Follow us on Facebook"
+            >
+              <img
+                src="./public/facebook.png"
+                alt="Follow us on Facebook"
+                class="social-icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.whatsapp.com/"
+              target="_blank"
+              aria-label="Follow us on Whatsapp"
+            >
+              <img
+                src="./public/whatsapp.png"
+                alt="Follow us on Whatsapp"
+                class="social-icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main content showing image of Pizza -->
+    <main id="/">
+      <div aria-label="main content">
+        <h1>
+          Craving for a <br />
+          chessy pizza?
+        </h1>
+        <div aria-label="bottom border"></div>
+        <p>
+          A delightful vegetarian option featuring a cheesy base and fresh
+          vegetables. A warm, gooey delight, piled high with a blend of
+          delicious cheeses, baked to golden perfection. Perfect for satisfying
+          those intense cheese cravings!
+        </p>
+      </div>
+    </main>
+    <!-- Section: about us, menu, carousel, gallary, find us -->
+    <section class="sections">
+      <section id="about" class="about" aria-label="About Us">
+        <h2>ABOUT US</h2>
+        <div aria-label="bottom border" class="border-line"></div>
+        <div aria-label="about us information">
+          <div>
+            <div aria-label="bottom border" class="border-line"></div>
+            <p>
+              We make pizza by human hands, with love and care. We use only the
+              freshest ingredients to create a perfect pizza that will make you
+              smile.
+            </p>
+          </div>
+          <img
+            src="https://i.timesnowhindi.com/story/how_to_knead_flour.jpg"
+            alt="flour dough"
+          />
+        </div>
+      </section>
+
+      <section id="menu" aria-label="Menu">
+        <h2>Menu</h2>
+        <div aria-label="bottom border" class="border-line"></div>
+        <p>
+          Explore the wide range of pizza baked in fresh dough and vegetables.
+          Our pizza will tempt all your excitement and senses. Made with a
+          delicate balance of everything cheesy and spicy, you will get to
+          savour the best pizza in town.
+        </p>
+        <div class="menu" aria-label="Menu of Pizza">
+          <!-- 1st Pizza -->
+          <div class="menu-item" aria-label="Menu Item">
+            <img
+              src="https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg"
+              alt="Pizza"
+            />
+            <div aria-label="Menu Item Description">
+              <h3>Cheese Pizza</h3>
+              <p>
+                A classic cheese pizza made with a crispy crust and melted
+                cheese
+              </p>
+            </div>
+          </div>
+          <!-- 2st Pizza -->
+          <div class="menu-item" aria-label="Menu Item">
+            <img
+              src="https://www.maggi.in/sites/default/files/srh_recipes/076de665d525866b48234f97e8b2a794.jpeg"
+              alt="Pizza"
+            />
+            <div aria-label="Menu Item Description">
+              <h3>Bread Pizza</h3>
+              <p>
+                Bread crumped pizza with capsicum, onion, mozzarella cheese and
+                MAGGI Rich tomato sauce that will make you fall in love
+              </p>
+            </div>
+          </div>
+          <!-- 3rd Pizza -->
+          <div class="menu-item" aria-label="Menu Item">
+            <img
+              src="https://www.allrecipes.com/thmb/gKD4hlJ26TYEvBTrYzX2SiF95Io=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-15022-veggie-pizza-DDMFS-4x3-hero-3dabf0783ef544eeaa23bdf28b48b178.jpg"
+              alt="Pizza"
+            />
+            <div aria-label="Menu Item Description">
+              <h3>Veg Pizza</h3>
+              <p>
+                When I make this veggie pizza, I never have leftovers. I like to
+                top it with broccoli, radish, onion, bell pepper, carrot, and
+                celery, but you can use whatever you'd like.
+              </p>
+            </div>
+          </div>
+          <!-- 4th Pizza -->
+          <div class="menu-item" aria-label="Menu Item">
+            <img
+              src="https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4.jpg"
+              alt="Pizza"
+            />
+            <div aria-label="Menu Item Description">
+              <h3>Margherita Pizza</h3>
+              <p>
+                A classic margherita pizza made with a crispy crust and fresh
+                tomatoes and paneer
+              </p>
+            </div>
+          </div>
+          <!-- 5th Pizza -->
+          <div class="menu-item" aria-label="Menu Item">
+            <img
+              src="https://tastesbetterfromscratch.com/wp-content/uploads/2023/06/Pepperoni-Pizza-1.jpg"
+              alt="Pizza"
+            />
+            <div aria-label="Menu Item Description">
+              <h3>Pepperoni Pizza</h3>
+              <p>
+                Brownish crust pizza with pepperoni, mozzarella cheese, and
+                tomato sauce
+              </p>
+            </div>
+          </div>
+          <!-- 6th Pizza -->
+          <div class="menu-item" aria-label="Menu Item">
+            <img
+              src="https://i.ytimg.com/vi/3nkSgJiMYoI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDIh-ptT9Z9TLpMv7mrxxtdkMs_EQ"
+              alt="Pizza"
+            />
+            <div aria-label="Menu Item Description">
+              <h3>Big paneer makhni Pizza</h3>
+              <p>
+                Soft and fluffy pizza with paneer, onions, and tomato sauce that
+                will make you fall in love
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel" aria-label="Pizza Carousel">
+        <h2>Carousel</h2>
+        <div aria-label="bottom border" class="border-line"></div>
+        <!-- Bootstrap Carousel -->
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          role="region"
+          aria-label="Pizza Images Carousel"
+        >
+          <div
+            role="group"
+            aria-roledescription="slider"
+            aria-label="Pizza Images"
+            class="carousel-inner"
+          >
+            <div class="carousel-item active" aria-label="Pizza Image 1">
+              <img
+                src="https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg"
+                class="d-block w-100"
+                alt="pizza"
+              />
+            </div>
+            <div class="carousel-item" aria-label="Pizza Image 2">
+              <img
+                src="https://www.maggi.in/sites/default/files/srh_recipes/076de665d525866b48234f97e8b2a794.jpeg"
+                class="d-block w-100"
+                alt="pizza"
+              />
+            </div>
+            <div class="carousel-item" aria-label="Pizza Image 3">
+              <img
+                src="https://www.allrecipes.com/thmb/gKD4hlJ26TYEvBTrYzX2SiF95Io=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-15022-veggie-pizza-DDMFS-4x3-hero-3dabf0783ef544eeaa23bdf28b48b178.jpg"
+                class="d-block w-100"
+                alt="pizza"
+              />
+            </div>
+            <div class="carousel-item" aria-label="Pizza Image 4">
+              <img
+                src="https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4.jpg"
+                class="d-block w-100"
+                alt="pizza"
+              />
+            </div>
+            <div class="carousel-item" aria-label="Pizza Image 5">
+              <img
+                src="https://tastesbetterfromscratch.com/wp-content/uploads/2023/06/Pepperoni-Pizza-1.jpg"
+                class="d-block w-100"
+                alt="pizza"
+              />
+            </div>
+            <div class="carousel-item" aria-label="Pizza Image 6">
+              <img
+                src="https://i.ytimg.com/vi/3nkSgJiMYoI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDIh-ptT9Z9TLpMv7mrxxtdkMs_EQ"
+                class="d-block w-100"
+                alt="pizza"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+            aria-label="Previous Pizza Slide"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+            aria-label="Next Pizza Slide"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="gallery" aria-label="Gallary">
+        <h2>Gallary</h2>
+        <div aria-label="bottom border" class="border-line"></div>
+
+        <div class="gallary" aria-label="gallary of pizza">
+          <img
+            src="https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg"
+            alt="pizza"
+          />
+          <img
+            src="https://www.maggi.in/sites/default/files/srh_recipes/076de665d525866b48234f97e8b2a794.jpeg"
+            alt="pizza"
+          />
+          <img
+            src="https://www.allrecipes.com/thmb/gKD4hlJ26TYEvBTrYzX2SiF95Io=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-15022-veggie-pizza-DDMFS-4x3-hero-3dabf0783ef544eeaa23bdf28b48b178.jpg"
+            alt="pizza"
+          />
+          <img
+            src="https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4.jpg"
+            alt="pizza"
+          />
+          <img
+            src="https://tastesbetterfromscratch.com/wp-content/uploads/2023/06/Pepperoni-Pizza-1.jpg"
+            alt="pizza"
+          />
+          <img
+            src="https://i.ytimg.com/vi/3nkSgJiMYoI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDIh-ptT9Z9TLpMv7mrxxtdkMs_EQ"
+            alt="pizza"
+          />
+        </div>
+      </section>
+
+      <section id="find" class="contact" aria-label="Contact Us">
+        <h2>Find Us</h2>
+        <div aria-label="bottom border" class="border-line"></div>
+        <div aria-label="contact us information">
+          <div class="contact-info" aria-label="contact details">
+            <p>We show our location on the map</p>
+            <div aria-label="location">
+              <img
+                class="location-icon"
+                src="./public/location.png"
+                alt="location-icon"
+              />
+              <span>Location XYZ, XYZ Colony, Delhi</span>
+            </div>
+            <div aria-label="phone number">
+              <img
+                class="phone-icon"
+                src="./public/phone.png"
+                alt="phone-icon"
+              />
+              <span>123-456-7890</span>
+            </div>
+          </div>
+          <!-- map -->
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUYSTBjAx-VaOGvlnqxSVv7rYm3FWFEDQsg&s"
+            alt="map"
+          />
+        </div>
+      </section>
+    </section>
+    <footer>
+      <img src="./public/Group.png" alt="group" />
+      <div aria-label="contact us information">
+        <div aria-label="contact details">
+          <img src="./public/envelope.png" alt="envelope" />
+          <span>mail@gmail.com</span>
+        </div>
+        <div aria-label="phone number">
+          <img src="./public/phone.png" alt="envelope" />
+          <span>123-456-7890</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const mainNav = document.getElementById("main-navigation");
+      function openMenu() {
+        mainNav.style.left = "0";
+      }
+      function closeMenu() {
+        mainNav.style.left = "-100%";
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
