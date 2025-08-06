@@ -357,4 +357,8 @@ footer > div > div img {
   .contact > div {
     flex-direction: column;
   }
+
+  footer {
+    padding: 0 1rem 2rem;
+  }
 }
